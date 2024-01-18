@@ -1,0 +1,14 @@
+# Config and run:
+- Mock-data (When you are not able to connect to BE site):
+  - go to mock API file: cd ../news-article-assignment/mock-api
+  - run: npm install
+  - run: mock-api start
+- Run FE project:
+  - run: npm install
+  - then run: npm run dev
+  - go to: localhost:3000
+- Project including feature:
+  - Listing Articles
+  - Article Detail
+  - Editing Article
+  - Creating Article

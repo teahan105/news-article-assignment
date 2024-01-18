@@ -1,0 +1,45 @@
+@import "./tailwind.css";
+@import "./fonts.css";
+
+body {
+    font-family: Roboto, serif;
+}
+
+.block {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover styles */
+.block:hover {
+    border-color: #8a3dfc; /* Change to your desired hover border color (purple in this example) */
+    box-shadow: 0 4px 6px rgba(138, 61, 252, 0.1); /* Change to your desired hover shadow color (purple in this example) */
+}
+
+.delete:hover span {
+    color: red;
+}
+
+/* Styling for content area in ReactQuill */
+.ql-editor {
+    color: #2d3748;
+    font-size: 1rem;
+}
+
+.quill-editor {
+    /* Change to border-gray-200 */
+    border: 2px solid #cbd5e0;
+    border-radius: 0.375rem;
+    color: #2d3748;
+}
+
+/* Styling for error message in ReactQuill */
+.text-red-500 {
+    color: #e53e3e;
+}
+
+/* Styling for placeholder text in ReactQuill */
+.ql-editor::before {
+    content: attr(data-placeholder);
+    color: #a0aec0;
+    font-style: italic;
+}
